@@ -18,7 +18,7 @@ class School
   end
 
   def sort
-    @roster
+    @roster.each_value(&:sort!)
   end
 
 end
